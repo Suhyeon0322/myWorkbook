@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap');
+
+/*** 시험 시작 전 페이지 CSS ***/
+
+.prepareTest {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 70%;
+    border: 2px solid black;
+    margin: 5% auto;
+}
+
+.prepareTest_title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+    color: maroon;
+    margin: 30px 0;
+}
+
+.testInfo {
+    width: 75%;
+    margin: 100px auto 60px auto;
+    font-size: 24px;
+}
+
+.test_preCautions {
+    width: 75%;
+    margin: 0px auto 100px auto;
+    font-size: 24px;
+}
+
+.test_startBtn {
+    font-size: 24px;
+    font-weight: bold;
+    width: 450px;
+    height: 100px;
+    border-width: 0px;
+    border-radius: 10px;
+    background-color:darksalmon;
+    margin-bottom: 20px;
+}
+
+.test_startBtn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+/*** 시험 페이지 CSS ***/
+
+.test {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.test_top {
+    height: 100px;
+    border-bottom: 2px solid #ccc;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.test_title {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+.test_info {
+    float: right;
+    font-size: 20px;
+    text-align: left;
+    margin: 25px 20px 0 0;
+}
+
+.test_upperLeft {
+    float: left;
+    display: inline;
+    margin-top: 10px;
+}
+
+.test_quesNo {
+    font-size: 35px;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color:dodgerblue;
+    margin-right: 20px;
+}
+
+.test_timer {
+    display: inline;
+    font-size: 30px;
+}
+
+.test_timer:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+.test_overTimer {
+    display: inline;
+    font-size: 25px;
+    color: red;
+    margin-left: 10px;
+}
+
+.test_overTimer:hover {
+    cursor: default;
+    text-decoration: none;
+}
+
+.test_upperRight {
+    float: right;
+}
+
+.test_exitBtn {
+    background-image: url(../images/exit.png);
+    background-size: 80px;
+    width: 80px;
+    height: 80px;
+    border: none;
+    vertical-align: middle;
+}
+
+.test_exitBtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.test_middle {
+    text-align: center;
+}
+
+.label_userAnswer {
+    color: slateblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.input_userAnswer {
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 400px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+    margin: 20px 20px 20px 0;
+  }
+
+.test_bottomRight { 
+    text-align: right;
+    margin-top: 30px;
+}
+
+.test_firstBtn, .test_lastBtn, .test_prevBtn, .test_nextBtn {
+    font-size: 20px;
+    font-weight: bold;
+    width: 80px;
+    height: 50px;
+    padding: 4px 8px;
+    border-width: 0px;
+    color: black;
+    border-radius: 8px;
+    background: orange;
+    text-align: center;
+    margin-left: 10px;
+}
+  
+.test_firstBtn:hover, .test_lastBtn:hover, .test_prevBtn:hover, .test_nextBtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.test_firstBtn:disabled, .test_lastBtn:disabled, .test_prevBtn:disabled, .test_nextBtn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.test_stopBtn, .test_restartBtn, .test_endBtn {
+    font-size: 18px;
+    font-weight: bold;
+    width: 120px;
+    height: 50px;
+    padding: 4px 8px;
+    border-width: 0px;
+    color: white;
+    border-radius: 8px;
+    background: blueviolet;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.test_stopBtn:hover, .test_restartBtn:hover, .test_endBtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/*** 시험 종료 페이지 CSS ***/
+
+.test_End {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.testEnd_Table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.testEnd_Table thead th {
+    border: 2px solid white;
+    background-color: rgb(101,113,177);
+    color: white;
+    height: 50px;
+    font-size: 25px;
+}
+
+.testEnd_Table tbody td {
+    border: 1px solid white;
+    background-color: rgb(205,212,234);
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.testEnd_quesImg {
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+.testEnd_radio {
+    display: none;
+}
+
+.testEnd_radio:checked + .label_ansTrue, .testEnd_radio:checked + .label_ansFalse {
+    opacity: 0.5;
+}
+
+.label_ansTrue, .label_ansFalse {
+    border-radius: 2px;
+    width: 400px;
+    height: 100px;
+    padding: 10px 20px;
+}
+
+.label_ansTrue:hover, .label_ansFalse:hover {
+    cursor: pointer;
+}
+
+.label_ansTrue {
+    background-color: #1263CE;
+    margin-right: 10px;
+}
+
+.label_ansFalse {
+    background-color: #CD0C22;
+}
+
+.testEnd_endBtn {
+    font-size: 18px;
+    font-weight: bold;
+    width: 100px;
+    height: 50px;
+    padding: 4px 8px;
+    border-width: 0px;
+    color: white;
+    border-radius: 8px;
+    background: navy;
+    text-align: center;
+    margin: 20px 10% 0 0;
+}
+
+.testEnd_endBtn:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}

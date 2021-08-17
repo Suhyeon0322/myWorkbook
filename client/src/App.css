@@ -1,0 +1,269 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+/* 로딩화면 디자인 */
+.loading {
+  position: relative;
+  margin: auto;
+  margin-top: 150px;
+  background-image: url(./images/loading.gif);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+/* 에러404페이지 디자인 */
+.error_img {
+  position: relative;
+  margin: auto;
+  margin-top: 50px;
+  background-image: url(./images/error_img.png);
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.error_text {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error_btn {
+  margin: auto;
+  margin-top: 50px;
+  width: 200px;
+  height: 55px;
+  cursor: pointer;
+  font-size: medium;
+  font-weight: bold;
+  background-color: lightgray;
+  border-color: lightcyan;
+}
+
+/* 메인페이지 디자인 */
+.main_img { 
+  position: relative;
+  margin: auto;
+  margin-top: 15px;
+  padding-top: 25px;
+  background-image: url(./images/main.png);
+  width: 665px;
+  height: 700px;
+  background-repeat: no-repeat;
+}
+
+.main_img .main_content {
+  text-align: center;
+  margin-top: 100px;
+  margin-left: 45px;
+  position: absolute;
+  font-size: x-large;
+}
+
+.mainButton {
+  background-image: url(./images/mainButton.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  background-size: cover;
+  width: 380px;
+  height: 103px;
+  cursor: pointer;
+  border: none;
+}
+
+.main_deco1 {
+  text-align: center;
+  margin-top: 20px;
+  margin-left: 135px;
+  width: 300px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/main_subimg.png);
+}
+
+.main_text1 {
+  font-size: 5mm;
+  font-weight: bold;
+  color: black;
+  margin-left: 20px;
+}
+
+.main_text2 {
+  margin-top: 20px;
+  margin-left: 20px;
+  font-size: 8mm;
+  font-weight: bold;
+  color: white;
+}
+
+/* 로그인페이지 디자인 */
+.center {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 70px;
+}
+
+.log_box {
+  width: 500px;
+  height: 350px;
+  margin: 30px;
+  border-style: solid;
+  border-width: 4px;
+  border-color: lightgray;
+}
+
+
+.Nbutton {
+  background-image: url(./images/NaverButton.PNG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 55px;
+  cursor: pointer;
+  padding: 0;
+  border-color: white;
+}
+
+.Gbutton {
+  background-image: url(./images/GoogleButton.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 50px;
+  cursor: pointer;
+  padding: 0;
+  border-color: white;
+  margin-top:30px;
+}
+
+/* header 디자인 */
+
+nav ul {
+  width: 99.5%;
+  height: 70px;
+  list-style-type: none;
+
+  border-width: 3.5px;
+  border-style: solid;
+  border-image: linear-gradient(to right, #9999F6, #D495CD, #EE96B6, #FE9897, #FFA07D);
+  border-image-slice: 0 0 1;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.home {
+  margin-top: -5px;
+  margin-left: 120px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.dropdown {
+  position: relative;
+  float: right;
+}
+
+.dropdown_menu {
+  padding: 16px;
+  margin-top: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 100px;
+}
+
+.dropdown_content {
+  position: absolute;
+  background-color: lightsalmon;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  display: none;
+  font-weight: bold;
+}
+
+.dropdown_content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown_content {
+  display: block;
+}
+
+.header_menu {
+  width: 80px;
+  margin-top: 6px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+  padding-right: 10px;
+}
+
+.header_menu_name {
+  width: 140px;
+  margin-top: 6px;
+  text-align: center;
+  font-weight: bold;
+  float: right;
+  padding-right: 10px;
+}
+
+a { text-decoration: none; color: black; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* test1 footer 밖으로 꺼낼경우 */
+
+html,body{
+	width:100%; 
+  height:100%;
+}
+
+#root {
+  height: 100%;
+}
+
+/* Footer 디자인 */
+
+footer {
+  margin: 0 auto;
+  padding-top: 20vh;
+  text-align: center;
+  font-size: smaller;
+}

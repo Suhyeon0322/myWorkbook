@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap');
+
+.quesList, .ques_createForm, .ques_modifyForm, .ques_info {
+  font-family: 'Nanum Gothic', sans-serif;
+  font-family: 'Noto Sans KR', sans-serif;
+  height: auto;
+}
+
+/*** 문제 목록 페이지 CSS ***/
+
+.quesList_title {
+  text-align: center;
+  font-weight: bolder;
+  margin: 15px 0;
+}
+
+.quesList_table {
+  width: 75%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+}
+
+.quesList_table thead th {
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  vertical-align: top;
+  color: #369;
+  border-bottom: 3px solid #036;
+}
+
+.quesList_table tbody th {
+  width: 150px;
+  padding: 10px;
+  font-weight: bold;
+  vertical-align: top;
+  border-bottom: 1px solid #ccc;
+  background: #f3f6f7;
+}
+
+.quesList_table td {
+  font-size: 18px;
+  width: 350px;
+  padding: 10px;
+  vertical-align: middle;
+  border-bottom: 1px solid #ccc;
+}
+
+.quesList_soluBtn, .ques_createBtn {
+  font-size: 18px;
+  width: 140px;
+  height: 50px;
+  padding: 10px 20px; 
+  line-height: 18px;
+  text-align: center; 
+  background-color: darkorange;  
+  border-color: darkorange; 
+  opacity: 1;
+  border-radius: 5px;
+}
+
+.quesList_soluBtn:hover, .ques_createBtn:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.ques_infoBtn {
+  font-size: 16px;
+  width: 100px;
+  height: 40px;
+  border-width: 0px;
+  color: #fff;
+  border-color: #003399;
+  border-radius: 10px;
+  background: #003399;
+}
+
+.ques_infoBtn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.ques_deleteBtn {
+  font-size: 16px;
+  width: 65px;
+  height: 40px;
+  border-width: 0px;
+  color: white;
+  border-radius: 10px;
+  background: #c0392b;
+  margin-left: 10px;
+}
+
+.ques_deleteBtn:hover {
+  cursor: pointer;
+  background: #ac3420
+}
+
+.ques_modifyBtn {
+  font-size: 16px;
+  width: 65px;
+  height: 40px;
+  border-width: 0px;
+  color: white;
+  border-radius: 10px;
+  background: rgba(35, 127, 188, 1);
+}
+.ques_modifyBtn:hover {
+  cursor: pointer;
+  background: rgba(22, 110, 168, 1);
+}
+
+.quesList_previousBtn {
+  width: 87.5%;
+  text-align: right;
+  font-weight: bolder;
+  font-size: 25px;
+  margin-top: 25px;
+}
+
+
+/*** 문제 추가, 문제 수정, 문제 상세보기 페이지 CSS ***/
+
+.ques_createTitle, .ques_modifyTitle, .ques_infoTitle {
+  font-size: 30px;
+  text-align: center;
+  color: black;
+  padding: 20px 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+.ques_form {
+  width: 650px;
+  margin: 30px auto;
+  background: linear-gradient(to right, #ffffff 0%, #fafafa 50%, #ffffff 99%);
+  border-radius: 10px;
+}
+
+.label_quesAnswer, .label_quesIMG, .label_soluIMG {
+  color: #1BBA93;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.ques_form_textInput, .ques_form_fileInput {
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333333;
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+  margin: 10px 0;
+}
+
+.ques_saveBtn, .ques_cancelBtn, .ques_previousBtn {
+  font-size: 16px;
+  width: 65px;
+  height: 40px;
+  border-width: 0px;
+  color: white;
+  border-radius: 8px;
+  background: #08bc9a;
+  margin: 15px 0 0 0;
+}
+.ques_saveBtn:hover, .ques_cancelBtn:hover, .ques_previousBtn:hover {
+  background: #01a183;
+  cursor: pointer;
+}
+
+/* <input type=file /> CSS */
+#quesImgFile, #soluImgFile {
+  position: absolute; 
+  width: 1px; 
+  height: 1px; 
+  padding: 0; 
+  margin: -1px; 
+  overflow: hidden; 
+  clip: rect(0, 0, 0, 0); 
+  border: 0;
+}
+
+.quesIMG_name, .soluIMG_name {
+  font-size: 16px;
+  box-sizing: border-box;
+  width: 400px;
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #333333;
+  text-align: left;
+  border: 1px solid #d6d6d6;
+  border-radius: 4px;
+  background: white;
+  outline: none;
+  margin: 10px 0;
+}
+
+.quesIMG_btn, .soluIMG_btn {
+  font-size: 16px;
+  width: 120px;
+  height: 100px;
+  padding: 8px 15px;
+  border-width: 0px;
+  color: white;
+  border-radius: 8px;
+  background: green;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.quesIMG_btn:hover, .soluIMG_btn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.soluImgFile_resetBtn, .quesImgFile_resetBtn {
+  font-size: 16px;
+  width: 120px;
+  height: 40px;
+  padding: 8px 15px;
+  border-width: 0px;
+  color: white;
+  border-radius: 8px;
+  background: green;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.soluImgFile_resetBtn:hover, .quesImgFile_resetBtn:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

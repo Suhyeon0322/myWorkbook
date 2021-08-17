@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Noto+Sans+KR&display=swap');
+
+/*** 문제 폴더 목록 페이지 CSS ***/
+
+.examList {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.examList h1 {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid #ccc;
+}
+
+/* 문제 폴더 목록 제목 하단 영역 CSS */
+.examFolder {
+    margin-top: 20px;
+}
+
+.examFolder ul {
+    list-style: none;
+    width: 90%;
+    -webkit-padding-start: 0px;
+    margin: 0 auto;
+    padding-left: 10%;
+}
+
+.examFolder li {
+    display: inline-block;
+    top: 1px;
+    width: auto;
+    height: auto;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 20px 0;
+    margin: 10px 15px;
+    text-align: center;
+}
+
+/* 문제 폴더 이미지 CSS */
+.exam_folderIMG {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    background-color: #ededed;
+    width: 200px;
+}
+
+.exam_folderIMG img {
+    margin-left: 10px;
+    width: 180px;
+    height: 150px;
+}
+
+/* 문제 폴더 이미지 hover 동작 시의 CSS */
+.exam_folderHover {
+    display: none;
+    opacity: .6;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    margin-top: -100px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    line-height: 200px;
+}
+
+.exam_folderIMG:hover .exam_folderHover {
+    display: block;
+}
+
+/* 문제 폴더 제목 CSS */
+.examFolder li strong {
+    display: block;
+    text-align: left;
+    padding: 5px 0 2px;
+    line-height: 1.4;
+    font-size: 20px;
+    color: navy;
+    margin-bottom: 10px;
+}
+
+.examFolder li strong:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.examFolder li span {
+    float: left;
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 15px;
+    width: 200px;
+    text-align: left;
+}
+
+/* '시험 시작' 버튼 CSS */
+.exam_startBtn {
+    font-size: 16px;
+    width: 120px;
+    height: 40px;
+    border-width: 0px;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: royalblue;
+    margin-bottom: 20px;
+}
+
+.exam_startBtn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.exam_createBtn {
+    float: right;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    background: #1f2f80;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.exam_createBtn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.exam_modifyBtn {
+    background-image: url(../images/modifyButton.png);
+    background-size: 45px;
+    width: 50px;
+    height: 50px;
+    border-color: black;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.exam_deleteBtn {
+    background-image: url(../images/deleteButton.png);
+    background-size: 45px;
+    width: 50px;
+    height: 50px;
+    border-color: black;
+    border-radius: 8px;
+    vertical-align: middle;
+}
+
+.exam_modifyBtn:hover, #exam_deleteBtn:hover {
+    cursor: pointer;
+}
+
+
+/*** 문제 폴더 추가, 문제 폴더 수정 페이지 CSS ***/
+
+.exam_create, .exam_modify {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.exam_createTitle, .exam_modifyTitle {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    padding: 20px 0;
+    border-bottom: 1px solid #cccccc;
+}
+  
+.exam_form {
+    width: 650px;
+    margin: 30px auto;
+    border-radius: 10px;
+}
+  
+.label_folderTitle, .label_examTimeLimit {
+    color: dodgerblue;
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+.exam_form_textInput {
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #333333;
+    text-align: left;
+    border: 1px solid #d6d6d6;
+    border-radius: 4px;
+    background: white;
+    outline: none;
+    margin: 10px 0;
+}
+  
+.exam_saveBtn, .exam_cancelBtn {
+    font-size: 16px;
+    width: 65px;
+    height: 40px;
+    border-width: 0px;
+    color: white;
+    border-radius: 8px;
+    background: dodgerblue;
+    opacity: 1;
+    margin: 15px 0 0 0;
+}
+
+.exam_saveBtn:hover, .exam_cancelBtn:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
+  
+.move-button {
+    font-size: 16px;
+    width: 100px;
+    height: 40px;
+    border-width: 0px;
+    color: white;
+    border-radius: 8px;
+    background: #08bc9a;
+    margin: 15px 0 0 0;
+}
